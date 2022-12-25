@@ -1,0 +1,133 @@
+/*---------------------------------
+    Template naem:
+    Author:
+    Author URI:
+---------------------------------*/
+
+
+/*---------------------------------
+    Google Font 
+---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+/*---------------------------------
+    Typography
+---------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary: #4f4f4f;
+    --secondary: #6c757d;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--secondary);
+}
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+
+}
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------
+    Cart Style
+---------------------------------*/
+.main_cart {
+    background-color: var(--white);
+}
+.product_img img {
+    min-width: 200px;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.main_cart .card {
+    border: none !important;
+}
+
+h3.product_name {
+    font-size: 18px;
+}
+/*---- remove_wish -----*/
+.remove_wish p i {
+    transition: all .2s ease;
+}
+.remove_wish p i:hover {
+    color: #ff3333;
+}
+
+.price_money h4 {
+    font-size: 16px;
+}
+
+/*---- Quantity ----*/
+.set_quantity {
+    position: relative;
+}
+.set_quantity::after {
+    position: absolute;
+    content: "(Note, 1 piece)";
+    width: auto;
+    height: auto;
+    text-align: center;
+    bottom: -25px;
+    right: .5rem;
+    font-size: 12px;
+
+}
+.pagination .page-link {
+    width: 45px;
+    font-size: 1rem;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+}
+.pagination input.page-link {
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pagination .page-link:hover {
+    color: #999;
+    background-color: var(--primary);
+}
+.pagination .page-link:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+/*---- Right side start -----*/
+.right_side {}
+
+.discount_code {}
+.discount_code input {
+    font-size: 14px;
+    color: var(--primary);
+    padding: 10px 20px;
+}
