@@ -52,6 +52,16 @@ hr {
 /*---------------------------------
     Cart Style
 ---------------------------------*/
+header {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 #666666;
+}
+.nav-brand img {
+    width: 104px;
+    height: auto;
+}
+
 .main_cart {
     background-color: var(--white);
 }
